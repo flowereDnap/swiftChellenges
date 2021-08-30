@@ -110,7 +110,7 @@ print(minMax(of:test))
 
  Отрывок из книги: By Ray Fix. «Swift Apprentice». Apple Books.
  */
-*/
+
 
 
 //8
@@ -154,3 +154,32 @@ func merging(_ dict1: [String: String], with dict2: [String: String]) -> [String
 }
 
 //10
+func occurrencesOfCharacters(in text: String) -> [Character: Int]
+{
+    var output: [Character: Int] = [:]
+    
+    for char in text{
+        output[char, default: 0] += 1
+    }
+    return output
+}
+
+//11
+func isInvertible(_ dictionary: [String: Int]) -> Bool{
+    let tst_set = Set(dictionary.values)
+    if tst_set.count == dictionary.count
+    {
+        return true
+    }
+    else{ return false}
+}
+*/
+//12
+var nameTitleLookup: [String: String?] = ["Mary": "Engineer", "Patrick": "Intern", "Ray": "Hacker"]
+
+nameTitleLookup["Patrick"] = nil
+nameTitleLookup.remove(at: nameTitleLookup.index(forKey: "Ray")!)
+
+print(nameTitleLookup)
+
+
