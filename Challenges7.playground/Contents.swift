@@ -81,8 +81,10 @@ func minMax(of numbers: [Int]) -> (min: Int, max: Int)? {
     }
     return ans
 }
-let test: [Int] = []
-print(minMax(of:test))
+let test: [Int] = [3 , 2 , 1]
+
+let res = minMax(of:test)
+print(res as Any)
 
 
 /*

@@ -54,11 +54,6 @@ func wordSwap (_ string :String) -> String
 
 //4
 
-let test_str =  "againandagain"
-
-print(test_str.components(separatedBy: "and"))
-
-
 //5
 func wordsRevers(_ string :String) -> String{
     var output:String = ""
