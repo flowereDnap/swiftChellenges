@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  app
+//  овыар
 //
-//  Created by User on 30.08.2021.
+//  Created by User on 01.01.2018.
 //
 
 import UIKit
@@ -13,9 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let test_str =  "againandagain"
-        let res = test_str.components(separatedBy: "a")
-        print(res)
+        // Override point for customization after application launch.
         return true
     }
 
